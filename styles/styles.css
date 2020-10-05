@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.801218);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header .logo-wrapper {
+  margin-right: 50px;
+  width: 150px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header .logo-wrapper .logo {
+  display: block;
+  width: 100%;
+}
+
+.header .links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  .header .links-wrapper .header .links-wrapper {
+    display: none;
+  }
+}
+
+.header .links-wrapper .link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 27px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header .links-wrapper .link:hover {
+  font-size: 17px;
+}
+
+.main-content .cover-wrapper {
+  background-image: url("../img/cover.png");
+  padding: 142px 35px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content .cover-wrapper .cover-content-wrapper {
+  color: white;
+  width: 600px;
+}
+
+.main-content .cover-wrapper .cover-content-wrapper .original-advice {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 18px;
+}
+
+.main-content .cover-wrapper .cover-content-wrapper .content-tittle {
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 0.85em;
+  margin-bottom: 15px;
+}
+
+.main-content .cover-wrapper .action-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.main-content .cover-wrapper .action-wrapper .action {
+  background-color: rgba(157, 151, 151, 0.541521);
+  padding: 20px 40px;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+
+.main-content .cover-wrapper .action-wrapper .action:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+.main-content .cover-wrapper .season {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.main-content .cover-wrapper .content-description {
+  font-size: 1.2em;
+  line-height: 33px;
+}
+
+.main-content .catalogue-wrapper {
+  padding: 35px;
+}
+
+.main-content .catalogue-wrapper .catalogue:not(:last-of-type) {
+  margin-bottom: 55px;
+}
+
+.main-content .catalogue-wrapper .catalogue .catalogue-tittle {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 90px;
+  overflow-x: auto;
+}
+
+.main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper .catalogue-content {
+  min-width: 300px;
+}
+/*# sourceMappingURL=styles.css.map */
