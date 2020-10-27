@@ -11,142 +11,144 @@ body{
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
     background-color: black;
-    
-  
-}
-.header{
-    background-color: rgba(0, 0, 0, 0.801218);
-    display: flex;
-    align-items: center;
-    padding: 12px 80px;
-    position: fixed;
-    width: 100%;
-    top:0;
-    left:0;
-        
-    .logo-wrapper{
-        margin-right: 50px;
-        width: 150px;
-        flex-shrink: 0;
-        .logo{
-            display: block;
-            width: 100%;
-
-           
-        }
-    }
-    .links-wrapper{
+    margin: 0;
+    .header{
+        background-color: rgba(0, 0, 0, 0.801218);
         display: flex;
         align-items: center;
-        
-        @media (max-width: $br-tablet) {
-            .header {
-              .links-wrapper {
-                display: none;
-              }
-            }
-          } 
-        .link{
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 27px;
-    font-weight: bold;
-    font-size: 15px;
+        padding: 12px 80px;
+        position: fixed;
+        width: 100%;
+        top:0;
+        left:0;
+            
+        .logo-wrapper{
+            margin-right: 50px;
+            width: 150px;
+            flex-shrink: 0;
+            .logo{
+                display: block;
+                width: 100%;
     
-    &:hover{
-        font-size: 17px;}
-        
-        }
-        
-    }
-}
-
-
-
-.main-content{
-    
-    .cover-wrapper{
-        background-image: url("../img/cover.png");
-        padding: 142px 35px;
-        background-size: cover;
-        background-position: center;
-
-        .cover-content-wrapper{
-            color: white;
-            width: 600px;
-
-            .original-advice{
                
-                font-weight: bold;
-                font-size: 1.8em;
-                margin-bottom: 18px;
-
-            }
-            .content-tittle{
-                font-size: 6em;
-                font-weight: bold;
-                line-height: 0.85em;
-                margin-bottom: 15px;
             }
         }
-            .action-wrapper{
-                display: flex;
-                margin-bottom: 25px;
-
-            .action{
-                background-color: rgba(157, 151, 151, 0.541521);
-                padding: 20px 40px;
-                text-decoration: none;
-                color:white;
-                border-radius: 7px;
-
-                &:not(:last-of-type){
-                    margin-right: 35px;
-                }
-                
+        .links-wrapper {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: $br-mobile){
+                display: none;
+            }     
+            .link{
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 27px;
+        font-weight: bold;
+        font-size: 1em;
+        
+       
+        &:hover{
+            font-size: 1.2em;}
+            @media screen and (max-width: $br-tablet){
+                font-size: 0.8em;
+            }
+            
             }
             
         }
-        .season{
-            font-size: 1.2em;
-           margin-bottom: 15px;
-
-        }
-            .content-description{
-                font-size: 1.2em;
-                line-height: 33px;
-
-        }
-        
     }
-
-.catalogue-wrapper{
-            padding: 35px;
-
-    .catalogue{
-            &:not(:last-of-type){
-                margin-bottom: 55px;
+    
+    
+    
+    .main-content{
+        
+        .cover-wrapper{
+            background-image: url("../img/cover.png");
+            padding: 142px 35px;
+            background-size: cover;
+            background-position: center;
+    
+            .cover-content-wrapper{
+                color: white;
+                width: 600px;
+    
+                .original-advice{
+                   
+                    font-weight: bold;
+                    font-size: 1.8em;
+                    margin-bottom: 18px;
+    
+                }
+                .content-tittle{
+                    font-size: 6em;
+                    font-weight: bold;
+                    line-height: 0.85em;
+                    margin-bottom: 15px;
+                }
             }
-        .catalogue-tittle{
-            color:white;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 22px;
+                .action-wrapper{
+                    display: flex;
+                    margin-bottom: 25px;
+    
+                .action{
+                    background-color: rgba(157, 151, 151, 0.541521);
+                    padding: 20px 40px;
+                    text-decoration: none;
+                    color:white;
+                    border-radius: 7px;
+    
+                    &:not(:last-of-type){
+                        margin-right: 35px;
+                    }
+                    
+                }
+                
+            }
+            .season{
+                font-size: 1.2em;
+               margin-bottom: 15px;
+    
+            }
+                .content-description{
+                    font-size: 1.2em;
+                    line-height: 33px;
+    
+            }
+            
         }
-        .catalogue-content-wrapper{
-            display: flex;
-            flex-wrap: nowrap;
-            margin-bottom: 90px;
-            overflow-x: auto;
-           
-            .catalogue-content{
-                min-width: 300px;
-            }   
+    
+    .catalogue-wrapper{
+                padding: 35px;
+    
+        .catalogue{
+                &:not(:last-of-type){
+                    margin-bottom: 55px;
+                }
+            .catalogue-tittle{
+                color:white;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 22px;
+            }
+            .catalogue-content-wrapper{
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 90px;
+                overflow-x: auto;
+               
+                .catalogue-content{
+                    min-width: 300px;
+                }   
+            }
+            
         }
-        
+    
     }
-
+    
+    
+    }
+      
+    
 }
 
-}
 

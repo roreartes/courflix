@@ -8,9 +8,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
   background-color: black;
+  margin: 0;
 }
 
-.header {
+body .header {
   background-color: rgba(0, 0, 0, 0.801218);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,19 +26,19 @@ body {
   left: 0;
 }
 
-.header .logo-wrapper {
+body .header .logo-wrapper {
   margin-right: 50px;
   width: 150px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-.header .logo-wrapper .logo {
+body .header .logo-wrapper .logo {
   display: block;
   width: 100%;
 }
 
-.header .links-wrapper {
+body .header .links-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,57 +47,63 @@ body {
           align-items: center;
 }
 
-@media (max-width: 800px) {
-  .header .links-wrapper .header .links-wrapper {
+@media screen and (max-width: 500px) {
+  body .header .links-wrapper {
     display: none;
   }
 }
 
-.header .links-wrapper .link {
+body .header .links-wrapper .link {
   color: #ffffff;
   text-decoration: none;
   margin-right: 27px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1em;
 }
 
-.header .links-wrapper .link:hover {
-  font-size: 17px;
+body .header .links-wrapper .link:hover {
+  font-size: 1.2em;
 }
 
-.main-content .cover-wrapper {
+@media screen and (max-width: 800px) {
+  body .header .links-wrapper .link {
+    font-size: 0.8em;
+  }
+}
+
+body .main-content .cover-wrapper {
   background-image: url("../img/cover.png");
   padding: 142px 35px;
   background-size: cover;
   background-position: center;
 }
 
-.main-content .cover-wrapper .cover-content-wrapper {
+body .main-content .cover-wrapper .cover-content-wrapper {
   color: white;
   width: 600px;
 }
 
-.main-content .cover-wrapper .cover-content-wrapper .original-advice {
+body .main-content .cover-wrapper .cover-content-wrapper .original-advice {
   font-weight: bold;
   font-size: 1.8em;
   margin-bottom: 18px;
 }
 
-.main-content .cover-wrapper .cover-content-wrapper .content-tittle {
+body .main-content .cover-wrapper .cover-content-wrapper .content-tittle {
   font-size: 6em;
   font-weight: bold;
   line-height: 0.85em;
   margin-bottom: 15px;
 }
 
-.main-content .cover-wrapper .action-wrapper {
+body .main-content .cover-wrapper .action-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
 }
 
-.main-content .cover-wrapper .action-wrapper .action {
+body .main-content .cover-wrapper .action-wrapper .action {
   background-color: rgba(157, 151, 151, 0.541521);
   padding: 20px 40px;
   text-decoration: none;
@@ -104,36 +111,36 @@ body {
   border-radius: 7px;
 }
 
-.main-content .cover-wrapper .action-wrapper .action:not(:last-of-type) {
+body .main-content .cover-wrapper .action-wrapper .action:not(:last-of-type) {
   margin-right: 35px;
 }
 
-.main-content .cover-wrapper .season {
+body .main-content .cover-wrapper .season {
   font-size: 1.2em;
   margin-bottom: 15px;
 }
 
-.main-content .cover-wrapper .content-description {
+body .main-content .cover-wrapper .content-description {
   font-size: 1.2em;
   line-height: 33px;
 }
 
-.main-content .catalogue-wrapper {
+body .main-content .catalogue-wrapper {
   padding: 35px;
 }
 
-.main-content .catalogue-wrapper .catalogue:not(:last-of-type) {
+body .main-content .catalogue-wrapper .catalogue:not(:last-of-type) {
   margin-bottom: 55px;
 }
 
-.main-content .catalogue-wrapper .catalogue .catalogue-tittle {
+body .main-content .catalogue-wrapper .catalogue .catalogue-tittle {
   color: white;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 22px;
 }
 
-.main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper {
+body .main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +150,7 @@ body {
   overflow-x: auto;
 }
 
-.main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper .catalogue-content {
+body .main-content .catalogue-wrapper .catalogue .catalogue-content-wrapper .catalogue-content {
   min-width: 300px;
 }
 /*# sourceMappingURL=styles.css.map */
