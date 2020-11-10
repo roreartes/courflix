@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
+body header {
+  background-color: rgba(0, 0, 0, 0.801218);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+body header .logo-wrapper {
+  margin-right: 50px;
+  width: 150px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body header .logo-wrapper .logo {
+  display: block;
+  width: 100%;
+}
+
+body header .links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  body header .links-wrapper {
+    display: none;
+  }
+}
+
+body header .links-wrapper .link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 27px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+body header .links-wrapper .link:hover {
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 800px) {
+  body header .links-wrapper .link {
+    font-size: 0.8em;
+  }
+}
+
+body .main-content .play-cover-wrapper {
+  background-image: url("/img/br bad-cover2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  padding: 142px 35px;
+}
+
+body .main-content .play-cover-wrapper .play-cover-content-wrapper {
+  width: 800px;
+}
+
+body .main-content .play-cover-wrapper .play-cover-content-wrapper .content-tittle .logo-serie {
+  display: block;
+  width: 345px;
+}
+
+body .main-content .play-cover-wrapper .play-cover-content-wrapper .serie-data .coincidence {
+  color: #009C04;
+  font-weight: bold;
+  margin-right: 10px;
+  border: black;
+  font-size: 0.9rem;
+}
+
+body .main-content .play-cover-wrapper .play-cover-content-wrapper .serie-data .year {
+  font-size: 0.9rem;
+  color: white;
+  margin-right: 15px;
+}
+
+body .main-content .play-cover-wrapper .play-cover-content-wrapper .serie-data .suitable-wrapper {
+  border: white;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=styles-play.css.map */

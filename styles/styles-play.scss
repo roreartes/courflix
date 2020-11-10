@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+$br-laptop: 1024px;
+$br-tablet: 800px;
+$br-mobile: 500px;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-color: black;
+    margin: 0;
+
+    header{
+        background-color: rgba(0, 0, 0, 0.801218);
+        display: flex;
+        align-items: center;
+        padding: 12px 80px;
+        position: fixed;
+        width: 100%;
+        top:0;
+        left:0;
+
+        .logo-wrapper{
+            margin-right: 50px;
+            width: 150px;
+            flex-shrink: 0;
+            .logo{
+                display: block;
+                width: 100%;
+            }
+    }
+    .links-wrapper {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $br-mobile){
+            display: none;
+        }     
+        .link{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 27px;
+    font-weight: bold;
+    font-size: 1em;
+    
+   
+    &:hover{
+        font-size: 1.1em;}
+        @media screen and (max-width: $br-tablet){
+            font-size: 0.8em;
+        }
+        
+        }
+        
+    }
+}
+
+.main-content{
+
+    .play-cover-wrapper{    
+        background-image: url("/img/br\ bad-cover2.png");
+        background-size: cover;
+        background-position: center;
+        min-height: 800px;
+        padding: 142px 35px;
+
+        .play-cover-content-wrapper{
+
+            width: 800px;
+            .content-tittle{
+               
+                .logo-serie{
+                    display: block;
+                    width: 345px;
+
+                }
+            
+            }
+           
+            .serie-data{
+
+                .coincidence{
+                    color: #009C04;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    border: black;
+                    font-size: 0.9rem;
+                }
+                .year{
+                    font-size: 0.9rem;
+                    color: white;
+                    margin-right: 15px;
+                }
+                .suitable-wrapper{
+                    border: white;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+}
